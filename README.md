@@ -10,10 +10,8 @@ https://hpmine42.github.io/Liquid-Toggle-Switch/
 
 ## Structure
 
-- `SRC/` – original source (uncompiled CSS nesting, module script)
-- `dist/` – build output, and the folder that is published to GitHub Pages
-
-## Deployment
-
-Every push to `main` publishes `dist/` through
-[`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+- `index.html`, `style.css`, `script.js` – the built demo. These files live in
+  the repository root because GitHub Pages publishes the `main` branch from `/`,
+  so the site URL opens the toggle directly.
+- `SRC/` – original CodePen source (uncompiled CSS nesting, module script).
+- `.nojekyll` – disables Jekyll processing so the files are served as-is.
